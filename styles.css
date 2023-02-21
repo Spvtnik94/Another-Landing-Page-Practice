@@ -1,0 +1,162 @@
+body{
+    background-color: rgb(54, 30, 30);
+    font-family: 'Playfair Display', serif;
+    color: bisque;
+}
+header{
+    display:flex;
+}
+.div-logo{
+    height:80px;
+}
+
+#header-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#nav-bar{
+    background-color: rgb(0, 0, 0);
+    position:fixed;
+    top: 0;
+    right: 0;
+    margin-right:20px;
+    margin-top:10px;
+}
+
+#nav-bar ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-header{
+    display:flex;
+    list-style: none;
+    gap:50px;
+}
+
+ul li a{
+    color:gold;
+    text-decoration: none;
+}
+
+.nav-link{
+    position:relative;
+    transition: all 0.4s;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.nav-link::after{
+    content: '';
+    height: 2px;
+    width:100%;
+    background-color:firebrick;
+    display: block;
+    position: absolute;
+    left:0;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.nav-link:hover::after{
+    opacity: 1;
+}
+
+.formulario-container{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+#submit{
+    border:none;
+    background-color: firebrick;
+}
+
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+@media screen and(min-width:660px) { 
+    .container{
+        flex-direction: column;
+    }
+}
+
+.container-child-1{
+    border: 3px solid grey;
+    flex-grow: 1;
+    flex-basis: 33%;
+    padding:3px;
+}
+
+.container-child-2{
+    border: 3px solid grey;
+    flex-grow: 2;
+    flex-basis: 33%;
+    padding:3px;
+}
+
+.container-child-3{
+    border: 3px solid grey;
+    flex-grow: 3;
+    flex-basis: 33%;
+    padding:3px;
+}
+
+h4{
+    margin:8px;
+    text-align: center;
+    background-color: rgb(201, 26, 26);
+    color:white;
+}
+
+.video-container{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pricing{
+    display: flex;
+}
+
+.price-child{
+    border:3px solid gray;
+}
+
+.price1{
+    flex-grow: 1;
+    flex-basis: 33%;
+    padding:3px;
+}
+
+.price2{
+    flex-grow: 2;
+    flex-basis: 33%;
+    padding:3px;
+}
+
+.price3{
+    flex-grow: 3;
+    flex-basis: 33%;
+    padding:3px;
+}
+
+footer{
+    margin-top: 40px;;
+    padding:14px;
+    background-color: rgb(0, 0, 0);
+}
